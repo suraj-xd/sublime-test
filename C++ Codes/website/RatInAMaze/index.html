@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rat In A Maze</title>
+</head>
+<style>
+    .banner {
+        position: absolute;
+        width: 25vh;
+        text-align: center;
+        top: 11%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;        
+        overflow: hidden;
+    }
+
+    .banner:before {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        bottom: 3px;
+        width: 50%;
+        /* background: rgba(255, 255, 255, 0.05); */
+
+    }
+
+    .banner span:nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to right, #0C002B, #1779ff);
+        animation: animate1 1.2s linear infinite;
+    }
+
+    @keyframes animate1 {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+
+</style>
+<body>
+    
+
+
+
+
+    <h1 id="title" class="title"> Rat in A Maze 🧩</h1>
+    <!-- <h1 class="titleline" style="position: absolute; top: 24px; color: white; left:44px;"> _____________</h1> -->
+    <a  id="banner" class="banner" href="#">
+            <span></span>
+    </a><br>
+    <div class="maze1">
+        <div class="one" id="one"><span id="startpanel" style="position: absolute; top: 36px; left: 12px;">Start</span><span id="startrat" style="position: absolute; font-size: 30px; left: 6px;">🐭</span></div>
+        <div class="two" id="two"></div>
+        <div class="three" id="three"></div>
+        <div class="four" id="four"></div>
+        <div class="five" id="five"></div>
+    </div>
+    <div class="maze1">
+        <div class="six" id="six"></div>
+        <div class="seven" id="seven"></div>
+        <div class="eight" id="eight"></div>
+        <div class="nine" id="nine"></div>
+        <div class="ten" id="ten"></div>
+    </div>
+    <div class="maze1">
+        <div class="one1" id="one1"></div>
+        <div class="two1" id="two1"></div>
+        <div class="three1" id="three1"></div>
+        <div class="four1" id="four1"></div>
+        <div class="five1" id="five1"></div>
+    </div>
+    <div class="maze1">
+        <div class="six1" id="six1"></div>
+        <div class="seven1" id="seven1"></div>
+        <div class="eight1" id="eight1"></div>
+        <div class="nine1" id="nine1"></div>
+        <div class="ten1" id="ten1"></div>
+    </div>
+    <div class="maze1">
+        <div class="one11" id="one11"></div>
+        <div class="two11" id="two11"></div>
+        <div class="three11" id="three11"></div>
+        <div class="four11" id="four11"></div>
+        <div class="five11" id="five11"><span id="endpanel" style="position: absolute; top: 36px; left: 12px;">End</span><span id="endrat"
+            style="position: absolute; font-size: 30px; left: 6px; visibility: hidden;">🐭</span></div>
+    </div>
+    <div id="noEscape" class="noEscape" style="position: absolute; font-size: 30px; top: 195px; left: 95px; border: 2px solid black; color:white; background: brown; padding: 5px;">NO ESCAPE!</div>
+     <br>  
+    <div class="controls">
+        <a id="reset" class="reset" style="background: rgba(243, 243, 128, 0.932);"><span style="position: absolute; left: 11px; top: 14px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px;">RESET🔃</span></a>
+        <a id="solve" class="solve" style="background: rgb(136, 236, 136);"><span
+            style="position: absolute; left: 8px; top: 16px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 22px;">Amaze it!</span></a>
+    </div>
+    <BR></BR> <BR></BR> <BR></BR> <BR></BR> <BR></BR>
+    <footer  style="text-align: center; color: white;">&copy; <a style="color: white; text-decoration: none;" href="https://www.instagram.com/suraj.xdd" target="_blank">Suraj Gaud</a></footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

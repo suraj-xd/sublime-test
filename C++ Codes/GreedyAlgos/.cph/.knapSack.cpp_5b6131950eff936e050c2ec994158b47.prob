@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: knapSack","srcPath":"c:\\Users\\TCS\\C++ Codes\\GreedyAlgos\\knapSack.cpp","tests":[{"id":1628927382236,"input":"3\n60 10\n100 20\n120 30\n50","output":""}],"timeLimit":3000,"url":"c:\\Users\\TCS\\C++ Codes\\GreedyAlgos\\knapSack.cpp"}

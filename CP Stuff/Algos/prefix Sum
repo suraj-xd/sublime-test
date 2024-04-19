@@ -1,0 +1,13 @@
+vector <int> a(n + 5), b(n + 5);
+vector <int> f(n + 5, -2e9);
+vector <int> ans(n + 5);
+for (int i = 1; i <= n; i ++) {
+    cin >> a[i];
+    b[i] = b[i - 1] + a[i];
+}
+f[0] = 0;
+for (int i = 0; i <= n; i ++) {
+    for (int j = 1; j + i - 1 <= n; j ++) {
+        f[i] = max(f[i], b[j + i - 1] - b[j - 1]);
+    }
+}

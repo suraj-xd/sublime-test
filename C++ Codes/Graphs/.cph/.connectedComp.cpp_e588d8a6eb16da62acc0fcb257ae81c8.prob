@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: connectedComp","srcPath":"c:\\Users\\TCS\\C++ Codes\\Graphs\\connectedComp.cpp","tests":[{"id":1630044277691,"input":"5 3\n0 1 \n2 3\n0 4","output":""}],"timeLimit":3000,"url":"c:\\Users\\TCS\\C++ Codes\\Graphs\\connectedComp.cpp"}

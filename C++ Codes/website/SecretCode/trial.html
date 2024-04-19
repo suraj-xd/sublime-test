@@ -1,0 +1,107 @@
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incrypto</title>
+</head>
+<body>
+    <section>
+        <h1>Incrypto</h1><br>
+        <input style="text-transform: uppercase;" class="input" id="input" type="text" value="ABCD">
+        <input id="keygen" class="keygen" type="text">
+        <button id="generate" class="generate"> Press</button>
+        <div><p id="code" class="code"></p></div>
+        <br>
+        <input id="keycode" class="keycode" type="text">
+        <button id="show" class="show" >Translate</button>
+
+        <div>
+            <p id="code1" class="code1"></p>
+        </div>
+    </section>
+    <script>
+        var input = document.querySelector('input');
+        var generate  = document.querySelector('.generate');
+        var show = document.querySelector('.show');
+        var code  = document.querySelector('.code');
+        var code1 = document.querySelector('.code1');
+        var key = document.querySelector('.keycode');
+        var keygen = document.querySelector('.keygen');
+
+
+
+        generate.onclick = ()=>{
+            let ans="";
+            let s = input.value;
+            s = s.toUpperCase();
+            var randomnum = String((Math.floor(Math.random() * 9012)) + 999);
+            console.log(randomnum);
+            for(let i=0;i<4;i++){
+                ans+=randomnum[i];
+            }
+            for(let i=0;i<input.value.length;i++){
+                if(s[i]==" "){
+                    ans+="32";
+                }else{
+                    var char1 = (s[i]);
+                    ans += char1.charCodeAt() - 26;
+                }
+            }
+            let answer = "";
+            for (let i = 0; i < ans.length; i += 2) {
+                let num1 = ans[i];
+                let num2 = ans[i + 1];
+                var num = (num1 + num2);
+                var bum = parseInt(num);
+                if(bum==32){
+                    answer+=" ";
+                }else{
+                    answer += String.fromCharCode(bum + '26');
+                }
+            }
+            code.innerHTML = answer;
+            keygen.value = randomnum;
+
+        }
+        show.onclick = ()=>{
+            let ans = input.value;
+            var answer="";
+            for (let i = 0; i < 2; i++) {
+                let char1 = (ans[i]);
+                answer += (char1.charCodeAt() - 26) / 100;
+            }
+            for (let i = 2; i < ans.length; i++) {
+                let char1 = (ans[i]);
+                answer += (char1.charCodeAt() - 26)/100;
+            }
+            var keycode="";
+            for(let i=0;i<4;i++){
+                keycode+=answer[i];
+            }
+            console.log(keycode);
+            if(key.value==keycode){
+                console.log("Yes")
+                var answercode="";
+                for (let i = 4; i < answer.length; i += 2) {
+                    let num1 = answer[i];
+                    let num2 = answer[i + 1];
+                    var num = (num1 + num2);
+                    var bum = parseInt(num) + 26;
+                    console.log(bum);
+                    if(bum==26){
+                        answer+=" ";
+                    }else{
+                        answercode += String.fromCharCode(bum);
+                    }
+                }
+                console.log(answercode);
+                code1.innerHTML = answercode;
+                
+            }else{
+                console.log("No")
+            }
+            
+        }
+    </script>
+</body>
+</html> -->

@@ -1,0 +1,83 @@
+* {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: radial-gradient(#f2716e, #ef4921);
+    }
+
+    .maze1 {
+        position: fixed;
+        position: relative;
+        display: flex;
+        margin: 2px;
+        top: 10px;
+        left: 40px;
+    }
+
+    .controls {
+        text-align: center;
+        position: relative;
+        display: flex;
+        top: 25px;
+        left: 70px;
+
+    }
+    .controls .reset,.solve{
+        position: relative;
+        width: 100px;
+        height: 55px;
+        display: block;
+        margin: 2px 2px;
+        border-radius: 9px;
+        margin: 0px 10px;
+
+    }
+    .maze1 .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six,
+    .seven,
+    .eight,
+    .nine,
+    .ten,
+    .one1,
+    .two1,
+    .three1,
+    .four1,
+    .five1,
+    .six1,
+    .seven1,
+    .eight1,
+    .nine1,
+    .ten1,
+    .one11,
+    .two11,
+    .three11,
+    .four11,
+    .five11 {
+        position: relative;
+        width: 55px;
+        height: 55px;
+        display: block;
+        background: rgb(250, 233, 212);
+        margin: 1px 2px;
+        border-radius: 4px;
+        /* box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2),
+            inset 0 0 15px #f2716e,
+            inset 0 0 25px #f2716e; */
+    }
+    .title {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        left: 42px;
+        top: 15px;
+        color: rgb(255, 255, 255);
+    }

@@ -1,0 +1,46 @@
+DP
+----
+- - - - - - - - - - - - - - - - - -
+DP FORM-1 
+-----------
+DP(Level,____)
+[Level, Choice, Check, Move]
+------------------------------
+Level: Current Configuration
+Choice: Options from the Level
+Check: Valid Choice or Not
+Move: Explore further
+- - - - - - - - - - - - - - - - - -
+DP FORM-2
+-----------
+DP(Index,____)
+[Path,Sequence,Subarray,Dependencies]
+--------------
+Giving us the Best Answer uptill the Ending
+Noting that Best answer on particular instance 
+and not on the Greedy MAX,MIN of DP Recurrence
+- - - - - - - - - - - - - - - - - -
+DP FORM-3
+--------------
+[Multi Level Sequence] [i][j] | Pointers | Different/Multiple Levels
+-----------------------------------------------------------
+Having maybe two or more differnt arrays things or like that going on.
+- - - - - - - - - - - - - - - - - -
+DP FORM-4
+--------------
+[Subarray] [L,R] | Range / Parts | Interval DP
+-----------------------------------------------
+Process for the best answer among the LR range and expand.
+- - - - - - - - - - - - - - - - - -
+DP FORM-5
+--------------
+Game DP | Combinatorically Impartially Game
+DP(Config) -> Win / Loose
+-------------------------
+if DP[X] giving DP[X-1] and uptill DP[X-Y] giving win
+DP[X] -> Win means Loose
+DP[Y] -> Loose means DP[Y] wins
+- - - - - - - - - - - - - - - - - -
+((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))
+Incremental Ideas. (Processing Better Ideas)
+--------------------------------------------
